@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.29)
 project(chapter1)
+project(chapter1 LANGUAGES C CXX)
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)   
 add_executable(chapter1 src/main.cc)
 
 option(ENABLE_TESTS "Enable Google Test suites" On)
